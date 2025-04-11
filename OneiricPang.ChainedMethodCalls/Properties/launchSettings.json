@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "增量生成器调试": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "..\\Test\\Test.csproj"
+    }
+  }
+}
