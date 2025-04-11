@@ -11,12 +11,19 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<Title>OneiricPang.ChainedMethodCalls</Title>
-		<Authors>福萝卜</Authors>
-		<Version>1.0.0</Version>
-		<Description>自动生成类的属性、方法的链式调用。</Description>
+		<Authors>福萝卜 OneiricPang</Authors>
+		<Version>1.0.0.1</Version>
+		<Description>为c#自动生成类的属性、方法的链式调用。</Description>
 		<Company>LiteStudio</Company>
-		<Copyright>LiteStudio</Copyright>
-		<PackageProjectUrl>https://www.litestudio.cn</PackageProjectUrl>
+		<Copyright>Copyright ©福萝卜 OneiricPang 2025</Copyright>
+		<PackageProjectUrl>https://github.com/oneeshine/OneiricPang.ChainedMethodCalls</PackageProjectUrl>
+		<PackageIcon>packageIcon.png</PackageIcon>
+		<RepositoryUrl>https://github.com/oneeshine/OneiricPang.ChainedMethodCalls</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -27,7 +34,18 @@
 	<ItemGroup>
 
 		<!-- Package the generator in the analyzer directory of the nuget package -->
-		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />	
+		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+		<None Include="packageIcon.png">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
 
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 </Project>

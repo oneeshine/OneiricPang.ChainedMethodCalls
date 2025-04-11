@@ -85,7 +85,7 @@ namespace Test.Class
         /// <param name="index"></param>
         /// <param name="ss"></param>
         /// <returns></returns>
-        public (Point?,int) ReturnPoint(ref int index, params string[] ss)
+        public (Point?,int) ReturnPoint(int index, params string[] ss)
         {
             switch (index)
             {

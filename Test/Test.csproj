@@ -9,7 +9,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\OneiricPang.ChainedMethodCalls\OneiricPang.ChainedMethodCalls.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+	  <PackageReference Include="OneiricPang.ChainedMethodCalls" Version="1.0.0.1" />
 	</ItemGroup>
 
 </Project>
